@@ -1,0 +1,348 @@
+
+@import 'text';
+@import 'color';
+@import 'mixin';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(246,239,220);
+    font-family: $font-family;
+    #wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header{
+            width: 100%;
+            nav{
+                width: 100%;
+                ul{                    
+                    list-style-type: none;
+                    li{
+                        a{
+                            color: black;
+                            text-decoration: none; 
+                            text-align: center;
+                            padding: 5px;
+                        }
+                        a:hover{
+                            background-color: $first-color;
+                            border-radius: 5px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@include computer-screen{
+    #wrapper{
+        .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #logo{
+                width: 150px;
+            }
+            nav{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height: 94px;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    margin: 0 10% 0 10%;
+                    li{
+                        width: 80px;
+                    }
+                }
+            }
+            
+        }
+        .main{
+            width: 100%;
+            .one{
+                width: 100%;
+                height: 100%;
+                margin: 0 0 99px 0;
+                #jeans{
+                    margin: 0;
+                    padding: 0;
+                    width: 1305px;
+                }
+                .back-img{
+                    position: absolute;
+                    margin: 10% 0 0 914px;
+                    background-color: $first-color;
+                    width: 950px;
+                    height: 451px;
+                    padding: 5px;
+                    h1{
+                        margin: 290px 0 0 98px;
+                        font-family: $tittal-font;
+                        font-size: 40pt;
+                        color: rgb(246,239,220);
+                    }
+                    h4{
+                        margin: 0 0 0 98px;
+                        font-size: 22pt;
+                        color: rgb(246,239,220);
+                    }
+                }
+            }
+            .two{
+                width: 80%;
+                margin: 0 0 118px 310px;
+                #rose{
+                    width: 326px;
+                    
+                    margin: 109px 0 0 -198px;
+                }
+                .background2{
+                    width: 685px;
+                    height: 597px;
+                    background-color: $first-color;
+                    float: left;
+                    h1{
+                        margin: 50px 0 0 40px;
+                        font-size: 40pt;
+                        font-family: $tittal-font;
+                        color: rgb(246,239,220);
+                    }
+                    h4{
+                        margin: 20px 0 43px 40px;
+                        font-size: 20pt;
+                        color: rgb(246,239,220);
+                    }
+                    p{
+                        margin: 0 0 0 40px;
+                        width: 390px;
+                        font-family: $font-family;
+                        font-size: 12pt;
+                        line-height: 18px;
+                        color: rgb(246,239,220);
+                    }
+                }
+                #red{
+                    width: 399px;
+                    position: absolute;
+                    margin: 0 0 0 75px;
+                }
+            }
+            .three{
+                width: 100%;
+                height: 870px;
+                padding-top: 39px;
+                background-color: $first-color;
+                margin-bottom: 159px;
+                h1{
+                    text-align: center;
+                    font-family: $tittal-font;
+                    font-size: 40pt;
+                    margin-bottom: 48px;
+                    color: rgb(246,239,220);
+                }
+                .product{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 1480px;
+                    margin: 0 auto 0 auto;
+                    div{
+                        width: 347px;
+                        margin: 0 72px 50px 72px;
+                        img{
+                            width: 347px;
+                        }
+                       p{
+                           font-family: $font-family;
+                           font-size: 12pt;
+                           color: rgb(246,239,220);
+                           span{
+                               float: right;
+                           }
+                           strong{
+                               color: black;
+                           }
+                           a{
+                               text-decoration: none;
+                               color: black;
+                           }
+                       } 
+                    }
+                }
+            }
+            .four{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .background4{
+                    background-color: $first-color;
+                    width: 1310px;
+                    height: 451px;
+                    position: absolute;
+                    margin: 127px 0 0 0;
+                    h1{
+                        margin: 54px 0 0 40px;
+                        font-family: $tittal-font;
+                        font-size: 40pt;
+                        color: rgb(246,239,220);
+                    }
+                    h4{
+                        margin: 30px 0 63px 40px;
+                        font-family: $font-family;
+                        font-size: 16pt;
+                        color: rgb(246,239,220);
+                    }
+                    p{
+                        margin: 0 0 0 40px;
+                        width: 662px;
+                        font-family: $font-family;
+                        color: rgb(246,239,220);
+                    }
+                }
+                #top{
+                    width: 310px;
+                    position: absolute;
+                    margin: 25px 0 0 0px;
+                }
+                #all{
+                    width: 448px;
+                    position: relative;
+                    margin: 0 0 215px 868px;
+                }
+            }
+            .five{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                #us{
+                    width: 809px;
+                    height: 540px;
+                    position: absolute;
+                    margin: 226px 0 0 -250px;
+                    z-index: 2;
+                }
+                .background5{
+                    width: 685px;
+                    height: 597px;
+                    background-color: $first-color;
+                    margin: 0 0 443px 629px;
+                    position: relative;
+                    z-index: 1;
+                    h1{
+                        font-family: $tittal-font;
+                        font-size: 40pt;
+                        margin: 103px 0 18px 57px;
+                        color: rgb(246,239,220);
+                    }
+                    h4{
+                        font-family: $font-family;
+                        font-size: 16pt;
+                        margin: 0 0 37px 57px;
+                        color: rgb(246,239,220);
+                    }
+                    p{
+                        width: 400px;
+                        margin: 0 0 0 232px;
+                        font-family: $font-family;
+                        font-size: 12pt;
+                        color: rgb(246,239,220);
+                    }
+
+                }
+            }
+            .six{
+                width: 100%;
+                .background6{
+                    background-color: $first-color;
+                    width: 1041px;
+                    height: 295px;
+                    position: absolute;
+                    margin: 143px 0 0 0;
+                    h1{
+                        margin: 91px 0 0 240px;
+                        font-family: $tittal-font;
+                        font-size: 40pt;
+                        color: rgb(246,239,220);
+                    }
+                    h4{
+                        font-family: $font-family;
+                        font-size: 16pt;
+                        margin: 0 0 0 240px;
+                        color: rgb(246,239,220);
+                    }
+                }
+                #blue{
+                    width: 1252px;
+                    height: 835px;
+                    float: right;
+                }
+            }
+        }
+        .footer{
+            background-color: $first-color;
+            color: white;
+            width: 100%;
+            height: 400px;
+            p{
+                font-size: small;
+                text-align: center;
+                width: 100%;
+                margin: 35px 0 0 0;
+            }
+            #infor{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                img{
+                    background-color: white;
+                    width: 150px;
+                    height: 212px;
+                    padding: 10px;
+                    margin: 64px 0 0 0;
+                    padding: 5px;
+                    
+                }
+                .information {
+                    display: flex;
+                    margin: 79px 0 0 80px;
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        width: 290px;
+                        
+                     h4{
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                        li{
+                            margin: 5px 0 0 0;
+                            svg{
+                                float: left;
+                                margin: 5px 10px 0 0;
+                            }  
+                            a{
+                                color: white;
+                                text-align: center;
+                                text-decoration: none;
+                            }
+                            
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
